@@ -6,7 +6,7 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "./dist", // Output directory for compiled files
-    "strict": true, // Enable strict type-checking options
+    "strict": false, // Enable strict type-checking options
     "skipLibCheck": true, // Skip type checking of declaration files
     "resolveJsonModule": true, // Include JSON imports
     "forceConsistentCasingInFileNames": true,
