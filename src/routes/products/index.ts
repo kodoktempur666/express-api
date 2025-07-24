@@ -4,7 +4,7 @@ import { validateData } from '../../middlewares/validationMiddleware';
 // import { z } from 'zod';
 import { createInsertSchema } from 'drizzle-zod';
 import { createProductSchema, updateProductSchema } from '../../db/schema';
-
+import { verifyToken, verifySeller } from '../../middlewares/authMiddleware';
 // const createProductSchema = z.object({
 //     name: z.string(),
 //     price: z.number({ message: 'Price must be a number' }),
@@ -18,7 +18,7 @@ router.get('/', listProducts)
 
 router.get('/:id', getProductById)
 
-router.post('/', validateData(createProductSchema), createProduct)
+router.post('/',verifyToken, verifySeller, validateData(createProductSchema), createProduct)
 
 router.put('/:id', validateData(updateProductSchema), updateProduct)
 
