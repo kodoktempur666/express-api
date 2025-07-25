@@ -1,8 +1,8 @@
 import { Router } from "express";
-import { createUserSchema, usersTable, loginSchema } from "../../db/schema";
-import { validateData } from "../../middlewares/validationMiddleware";
+import { createUserSchema, usersTable, loginSchema } from "../../db/schema.js";
+import { validateData } from "../../middlewares/validationMiddleware.js";
 import bcrypt from "bcryptjs";
-import { db } from "../../db/index"; // Adjust the import path as necessary
+import { db } from "../../db/index.js"; // Adjust the import path as necessary
 import { eq } from "drizzle-orm";
 import jwt from "jsonwebtoken";
 

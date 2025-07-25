@@ -15,6 +15,13 @@
       "when": 1753260752343,
       "tag": "0001_bent_night_thrasher",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1753455528830,
+      "tag": "0002_warm_black_panther",
+      "breakpoints": true
     }
   ]
 }
